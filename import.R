@@ -1,0 +1,22 @@
+trades <- read.table("data/trades.csv",
+                     header = T,
+                     sep = ",",
+                     skip = 3,
+                     #stringsAsFactors = T,
+                     colClasses = c("NULL",
+                                    "NULL",
+                                    "factor",
+                                    "NULL",
+                                    "factor",
+                                    "character",
+                                    "character",
+                                    "integer",
+                                    "numeric",
+                                    "factor",
+                                    "numeric",
+                                    "numeric",
+                                    "factor",
+                                    "numeric",
+                                    "factor"))
+trades
+str(trades)
